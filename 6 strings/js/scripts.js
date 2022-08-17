@@ -11,4 +11,3 @@ var falso = false;
 console.log(falso);
 console.log(typeof falso);
 
-var fals
