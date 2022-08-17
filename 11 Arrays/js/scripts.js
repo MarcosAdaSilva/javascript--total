@@ -1,28 +1,22 @@
-var objeto = {
-  nome: "Marcos",
-  idade: 43,
-  profissão: "Programador" ,
-  estaTrabalhando: true, 
-};
+// array é com [] e objeto é com {}
+var arr = [5, "Marcos", true, {teste: 1, teste: 2}];
 
-console.log(objeto);
+console.log(arr);
 
-console.log(typeof objeto);
+var arr2 = [2,3,4,5,6];
 
-console.log(objeto.nome);
-console.log(objeto.idade);
-console.log(objeto.profissão);
+console.log(arr2);
 
-console.log("O meu nome é " + objeto.nome);
+// acessando objetos no array pelo índece
+console.log(arr[1]);
+console.log(arr[0]);
 
-//mudando a propriedade do obejeto;
+// inserindo e modificando objetos no array pelo índece
+arr[4] = 10;
+ console.log(arr);
 
-objeto.nome = "João";
-
-console.log(objeto.nome);
-
-console.log(objeto);
-
-objeto.graduação = true;
-
-console.log(objeto);
+ arr[5] = 43;
+ console.log(arr);
+  
+ arr[0] = "teste";
+ console.log(arr);
