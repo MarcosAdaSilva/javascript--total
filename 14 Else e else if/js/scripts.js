@@ -1,33 +1,28 @@
-var idade = 15;
-// operador 0 (zero) é reconhecido como falso pelo javascript
-var possuiCarro = 1;
+var nome = "Kledea";
+// O operador Else é o oposto do if e é executado sempre depois
 
-if (idade >= 18) {
-  console.log("O usuário pode fazer a carteira");
+if (nome == "João") {
+  console.log("O nome dele é João");
+} else if (nome == "Marcos") {
+  console.log("O nome é Marcos");
+} else if (nome == "Kledea") {
+  console.log("O nome é Kledea");
+} else {
+  console.log("Ele possue outro nome!");
 }
 
-if (idade <= 17) {
-  console.log("O usuário não pode fazer a carteira");
-}
+var idade = 19;
+// Podemos também utilizar apenas o if e o else if, semnecessidade de usar o else no mesmo código...
 
-if (possuiCarro) {
-  console.log("O usuário já pode andar de carro");
+if (idade > 17) {
+  console.log("Ele pode entrar na festa!");
+} else if (idade >= 18) {
+  console.log("Ele só pode entrar com autorização!");
 }
+// sempre começamos com if...
 
-var nome = "Marcos";
-// Operador de igualdade
 if (nome == "Marcos") {
-  console.log("O seu nome é Marcos");
-}
-//operador de comparação
-if (nome != "Marcos") {
-  console.log("O seu nome não é Marcos");
-}
-
-if (20 > 10) {
-  console.log("Passou");
-}
-
-if (100 < 20) {
-  console.log("Passou 2");
+  console.log("teste");
+} else {
+  console.log("testando");
 }
