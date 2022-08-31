@@ -33,3 +33,5 @@ var somaDois = soma(5, 5);
 console.log(somaDois);
 
 consolo.log(soma(4, 5));
+
+// Função soma não rolou, verificar o motivo!!
