@@ -20,3 +20,6 @@ console.log(arr.indexOf(5));
 var arr2 = ["o", "rato", "roeu", "a", "roupa"];
 
 console.log(arr2.join(","));
+
+// reverse inverter um array
+console.log(arr2.reverse());
