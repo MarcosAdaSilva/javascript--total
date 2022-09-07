@@ -16,3 +16,19 @@ var nomeTrim = nome.trim();
 
 console.log(nome);
 console.log(nomeTrim);
+
+// split
+
+console.log(frase.split(" "));
+
+var tags = "PHP, JavaScript, HTML, CSS";
+
+console.log(tags.split(", "));
+
+// lastIndexof
+
+var fraseDois = "Eu quero a última palavra testedesta frase de teste";
+
+console.log(fraseDois.indexOf("teste"));
+
+console.log(fraseDois.lastIndexOf("teste"));
