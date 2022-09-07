@@ -10,3 +10,13 @@ console.log(arr);
 arr.splice(4, 1);
 
 console.log(arr);
+
+// acessando elemento do array
+
+console.log(arr.indexOf(5));
+
+// join
+
+var arr2 = ["o", "rato", "roeu", "a", "roupa"];
+
+console.log(arr2.join(","));
