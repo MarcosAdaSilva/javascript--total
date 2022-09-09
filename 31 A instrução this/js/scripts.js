@@ -15,6 +15,9 @@ let pessoa = {
   aniversario: function () {
     this.idade += 1;
   },
+  saudacao: function () {
+    return "Sr. " + this.nome;
+  },
 };
 
 pessoa.dizerNome();
@@ -26,3 +29,6 @@ pessoa.aniversario();
 pessoa.aniversario();
 
 console.log(pessoa.idade);
+var sdc = pessoa.saudacao();
+
+console.log("olá " + sdc);
