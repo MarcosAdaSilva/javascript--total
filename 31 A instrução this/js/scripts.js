@@ -1,18 +1,28 @@
+console.log(this);
+
+alert("olá");
+this.alert("olá 2");
+
 let pessoa = {
   nome: "Marcos",
   idade: 29,
   falar: function () {
     console.log("olá, tudo bem?");
   },
-  soma: function (a, b) {
-    return a + b;
+  dizerNome: function () {
+    console.log("o meu nome é " + this.nome);
+  },
+  aniversario: function () {
+    this.idade += 1;
   },
 };
 
-console.log(pessoa.nome);
+pessoa.dizerNome();
 
-pessoa.falar();
+console.log(pessoa.idade);
 
-var soma = pessoa.soma(2, 2);
+pessoa.aniversario();
+pessoa.aniversario();
+pessoa.aniversario();
 
-console.log(soma);
+console.log(pessoa.idade);
