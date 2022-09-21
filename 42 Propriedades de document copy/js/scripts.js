@@ -1,5 +1,5 @@
 function exibir(num) {
-  console.log(num);
+  console.log("A operação resultou em: " + num);
 }
 
 function soma(a, b, callback) {
