@@ -1,24 +1,15 @@
-// clearTimeout na prática
-var x = 0;
+// onload é um evento no javascript
 
-var myTimer = setTimeout(function () {
-  console.log("o x é 0");
-}, 1500);
+window.onload = function () {
+  console.log("Carregou o Dom");
 
-x = 5;
+  var title2 = document.querySelector("#title");
 
-if (x > 0) {
-  clearInterval(myTimer);
-  console.log("o x passou de 0");
-}
+  console.log(title2);
+};
 
-// clearSetInterval na prática
+console.log("Carregou o js");
 
-var myInterval = setInterval(function () {
-  console.log("Imprimindo o interval");
-}, 500);
+var title = document.querySelector("#tilte");
 
-setTimeout(function () {
-  console.log("Não precisamos mais repetir");
-  clearInterval(myInterval);
-}, 1500);
+console.log(title);
