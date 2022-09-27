@@ -2,28 +2,28 @@
 function addTask() {
   // título da tarefa
   const taskTitle = document.querySelector("#task-title").value;
-}
 
-if (taskTitle) {
-  // clone template
-  const template = document.querySelector(".template");
+  if (taskTitle) {
+    // clone template
+    const template = document.querySelector(".template");
 
-  const newTask = template.cloneNode(true);
+    const newTask = template.cloneNode(true);
 
-  // adiciona título
-  newTask.querySelector(".task-title").textContent = taskTitle;
+    // adiciona título
+    newTask.querySelector(".task-title").textContent = taskTitle;
 
-  // remover as classes desnecessárias
-  newTask.classList.remove("template");
-  newTask.classList.remove("hide");
+    // remover as classes desnecessárias
+    newTask.classList.remove("template");
+    newTask.classList.remove("hide");
 
-  // adiciona tarefa na lista
-  const list = document.querySelector("#task-list");
+    // adiciona tarefa na lista
+    const list = document.querySelector("#task-list");
 
-  list.appendChild(newTask);
+    list.appendChild(newTask);
 
-  // limpar texto
-  document.querySelector("#task-title").value = "";
+    // limpar texto
+    document.querySelector("#task-title").value = "";
+  }
 }
 
 // evento de adicinar tarefa
