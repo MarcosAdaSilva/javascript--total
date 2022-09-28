@@ -46,7 +46,11 @@ function removeTask(task) {
 }
 
 // função de completar tarefa
-function completeTask(task)
+function completeTask(task) {
+  const taskToComplete = task.parentNode;
+
+  taskToComplete.classList.toggle("done");
+}
 
 // evento de adicinar tarefa
 const addBtn = document.querySelector("#add-btn");
